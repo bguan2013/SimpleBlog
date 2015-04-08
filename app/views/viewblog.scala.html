@@ -1,0 +1,88 @@
+@(blogs : List[Blog])(username : String)
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/BlogPageStyleSheet.css")">
+		<title>Blog Page</title>
+		<script type="text/javascript">
+			var xmlHttp = new XMLHttpRequest();
+			function saveComment(comment){
+				xmlHttp.open("Post", "CommentBlog", true);
+				xmlHttp.onreadystatechange = displayComment;
+				xmlHttp.send("");
+			}
+			function displayComment(){
+				if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+
+
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<img id = "header_background" src="@routes.Assets.at("images/waterDrop.jpg")">
+		<div class = "header">
+			<a href="@routes.Application.writeblog()" id = "write_button"></a>
+			<a href="@routes.Application.rssnews()" id = "rss_button"></a>
+			
+
+			<div>@username</div>
+		
+			
+			<nav>
+				<ul>
+    				<li>
+    					<a id = "icon" href=""></a>
+        				<ul>
+        					<li>
+        						<a href="@routes.Application.setting()"> Setting </a>
+        					</li>
+        					
+        					<li>
+        						<a href="@routes.Application.logout()"> Logout </a>
+        					</li>
+        				</ul>
+    				</li>
+				</ul>
+			</nav>
+			
+		</div>
+		<div class = "post">
+			<ul id = "post-list">
+				
+					@if(blogs.length == 0){
+					
+							<li id = "first-post">No post</li>
+							
+					}else{
+
+						@for(i <- (0 until blogs.length).reverse){
+
+					   		   @if(i == 0){
+									<li id = "first-post">
+										<p>@blogs(i).blog_title</p>
+										<p>@blogs(i).blog_post</p>
+										<p>@blogs(i).date</p>
+										<p>@blogs(i).user_name</p>
+									</li>
+								}else{
+									<li id = "">
+								    	<p>@blogs(i).blog_title</p>
+										<p>@blogs(i).blog_post</p>
+										<p>@blogs(i).date</p>
+										<p>@blogs(i).user_name</p>
+									</li>
+								}
+						}
+					}
+
+				
+			</ul>
+		</div>
+	</body>
+
+</html>
+
+

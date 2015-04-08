@@ -1,0 +1,24 @@
+body{
+    
+    text-align: center;
+    font-family: helvetica neue;
+    font-weight: 100;
+    font-size: 32px;
+    color: #33ccff;
+}
+
+ form{
+    
+    font-size: 14px;
+    
+    
+}
+
+ .button{
+    
+    background-color: transparent;
+    font-size: 18pt;
+    -webkit-appearance: none;
+    border: 1px solid #33ccff;
+    border-radius: 10px;
+}

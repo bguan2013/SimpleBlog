@@ -1,0 +1,198 @@
+body{
+		
+		font-family: helvetica neue, applegothic, arial;		
+		font-size: 22px;
+		font-weight: 100;
+		color: white;
+
+	}
+
+	#notification{
+
+		font-family: helvetica neue, applegothic, arial;		
+		font-size: 16px;
+		font-weight: 100;
+		color: #980000;
+
+
+	}
+
+	#box{
+	
+
+	padding: 60px;
+	height: 370px;
+ 	width: 274px;
+ 	background-color: transparent;
+ 	margin: 0 auto;
+ 	margin-top: 9%;
+ 	box-shadow: 1px 1px 2px black; 
+  	border-radius: 5px;
+  	-webkit-border-radius:5px;
+  	-moz-border-radius: 5px;
+    overflow: hidden;
+	
+	}
+
+
+
+	#face-icon{
+		display: block;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: 80px;
+		height: 80px;
+		border: 2px solid white;
+		border-radius: 40px;
+		-webkit-border-radius: 40px;
+		-moz-border-radius: 40px;
+		background-image: url("../images/alex.png");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; 
+		margin: 0 auto;
+		
+		
+		
+	}
+
+	#face-icon:hover{
+
+		filter: brightness(150%);
+		-webkit-filter: brightness(150%);
+  		-moz-filter: brightness(150%);
+  		-o-filter: brightness(150%);
+  		-ms-filter: brightness(150%);
+  		border: 4px solid grey;
+
+	}
+
+
+	#username{
+		height: 44px;
+		width: 100%;
+ 		margin-bottom: 10px;
+  		position: relative;
+		-webkit-appearance: none;
+		-moz-appearance: none;	
+		border: 1px solid white;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		font-family: helvetica neue, blogFont, arial;
+		font-size: 20px;
+		font-weight: 100;
+		
+		
+
+	}
+
+	#username:hover{
+
+		-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+ 		 -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+ 		 box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+ 		 border: 1px solid #85FF85;
+ 		border-top: 1px solid #85FF85;
+	}
+
+	#password{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		position: relative;
+		margin-bottom: 10px;
+		border: 1px solid white;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		height: 44px;
+		width: 100%;
+		font-family: helvetica neue, blogFont, arial;
+		font-size: 20px;
+		font-weight: 100;
+		
+	
+	}
+
+	#password:hover{
+
+		border: 1px solid #85FF85;
+ 		border-top: 1px solid #85FF85;
+		-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+ 		 -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+ 		 box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+
+	}
+
+	#submit{
+		
+		position: relative;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-color: transparent;
+		color: white;
+		border: 1px solid white;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		height: 60px;
+		width: 100%;
+		font-family: helvetica neue, blogFont, arial;
+		font-size: 20px;
+		font-weight: 100;
+
+	
+	}
+
+	#submit:hover{
+
+		color: #85FF85;
+		border: 1px solid #85FF85;
+
+	}
+
+
+
+	#background-image{
+
+		background-image: url("../images/RegisterWater.jpg");
+		position: fixed;
+		z-index: -100;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		background-size: cover;
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+  		-moz-filter: blur(10px);
+  		-o-filter: blur(10px);
+  		-ms-filter: blur(10px);
+
+
+	}
+
+	form p{
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 0%;
+		font-size: 40px;
+		text-align: center;
+
+
+
+	}
+
+	#login{
+		
+		padding-top: 4px;
+		font-family: helvetica neue, applegothic, arial;		
+		font-size: 12px;
+		font-weight: 100;
+		color: grey;
+
+
+	}

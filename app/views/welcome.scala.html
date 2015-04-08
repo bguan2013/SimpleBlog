@@ -1,0 +1,37 @@
+
+<! doctype html>
+
+
+<html>
+
+	<head>
+		<link rel="stylesheet" href="@routes.Assets.at("stylesheets/SimpleBlog.css")" type="text/css" 
+		/>
+	</head>
+	<body>
+
+		<div>
+		<p id = "welcome_title">Welcome to Simple Blog</p>
+		</div>
+		<div>
+    		<form>
+    			<div>
+    			<input type="button" onclick = "location.href = '@routes.Application.login()'" name="Login" value="Login" id="login" />
+    			<input type="button" onclick = "location.href = '@routes.Application.register()'" name="First Time" value="First Time" id="first-time"/>
+    			<input type="button" onclick = "location.href = '@routes.Application.viewblog()'" name="View Blog" value="View Blog" id="view-blog"/>
+    			</div>
+    		</form>
+		</div>
+
+		<video autoplay loop id = "bgvid">
+			<source src = "@routes.Assets.at("videos/Looping_Clouds.mp4")" type = "video/mp4">
+		</video>
+
+		<footer id= "footer">
+			<p>
+				&copy;2015 Bo Guan, All Rights Reserved
+			</p>
+		</footer>
+	</body>
+
+</html>

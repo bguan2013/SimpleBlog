@@ -1,0 +1,135 @@
+
+@font-face{
+	
+	font-family: blogFont;
+	src: url(fonts/Quicksand-Light.otf);
+
+}
+
+body{
+	font-family: helvetica neue, applegothic, blogFont, arial;
+	font-size: 60px;
+	font-weight: 100;
+	text-align: center;
+	
+}
+
+
+
+#welcome_title{
+	position: relative;
+	top: 250;
+	/*color: #33CCFF;*/
+
+}
+
+form{
+	
+
+	position: relative;
+	top: 250;
+
+}
+
+#footer{
+
+
+	font-size: 12px;		
+	position: relative;;
+	top: 250;
+
+}
+
+
+
+#login{
+	background-color: transparent;
+	margin-right: 30px;
+	-webkit-appearance: none;
+	border: 1px solid;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	height: 60px;
+	width: 150px;
+	font-family: helvetica neue, blogFont, arial;
+	font-size: 20px;
+	font-weight: lighter;
+	/*color: #33CCFF;*/
+}
+
+#login:hover{
+
+	/*font-size: 22px;*/
+	/*color: #00FF99;*/
+	color: #33CCFF;
+	border-color: #33CCFF;
+	/*border-color: #00FF99;*/
+}
+#first-time{
+	background-color: transparent;
+	-webkit-appearance: none;
+	border: 1px solid;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	height: 60px;
+	width: 150px;
+	font-family: helvetica neue, blogFont, arial;
+	font-size: 20px;
+	font-weight: lighter;
+	/*color: #33CCFF;*/
+}
+#first-time:hover{
+
+	/*font-size: 22px;*/
+	/*color: #00FF99;*/
+	color: #33CCFF;
+	border-color: #33CCFF;
+	/*border-color: #00FF99;*/
+}
+
+#view-blog{
+	background-color: transparent;
+	margin-left: 30px;
+	-webkit-appearance: none;
+	border: 1px solid;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	height: 60px;
+	width: 150px;
+	font-family: helvetica neue, blogFont, arial;
+	font-size: 20px;
+	font-weight: lighter;
+	/*color: #33CCFF;*/
+
+}
+#view-blog:hover{
+
+	/*font-size: 22px;*/
+	/*color: #00FF99;*/
+	color: #33CCFF;
+	border-color: #33CCFF;
+	/*border-color: #00FF99;*/
+
+
+}
+
+
+video#bgvid{
+
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height:  auto;
+	z-index: -100;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+}
