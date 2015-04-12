@@ -7,18 +7,31 @@
 		<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/BlogPageStyleSheet.css")">
 		<title>Blog Page</title>
 		<script type="text/javascript">
-			var xmlHttp = new XMLHttpRequest();
+			var xmlHttp1 = new XMLHttpRequest();
 			function saveComment(comment){
-				xmlHttp.open("Post", "CommentBlog", true);
-				xmlHttp.onreadystatechange = displayComment;
-				xmlHttp.send("");
+				xmlHttp1.open("Post", "CommentBlog", true);
+				xmlHttp1.onreadystatechange = displayComment;
+				xmlHttp1.send(comment);
 			}
 			function displayComment(){
-				if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+				if(xmlHttp1.readyState == 4 && xmlHttp1.status == 200){
+					
+				}
+			}
+			function getNewBlogs(index){
+
+				var xmlHttp2 = new XMLHttpRequest();
+				xmlHttp2.onreadystatechange = function(){
+
+					//Inorder to use JSON with AJAX, we need to use the third party library JQuery
+					var json = xmlHttp2.responseXML;
 
 
 				}
+				xmlHttp2.open("Post","NewBlog",true);
+				xmlHttp2.send(index);
 			}
+
 		</script>
 	</head>
 	<body>
